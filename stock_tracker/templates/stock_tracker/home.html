@@ -1,0 +1,10 @@
+
+{% if all_portfolios %}
+    <ul>
+        {% for porfolio in object_list %}
+            <li><a href="/stock_tracker/{{ portfolio.id }}">{{ porfolio.portfolio_name }}</a></li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <h3> You Don't Have Any Portfolios</h3>
+{% endif %}
